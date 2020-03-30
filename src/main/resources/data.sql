@@ -1,0 +1,1 @@
+insert into auth_user (id,name,email,password,created,token) values('uuid-1-testes','jefferson','jeff@jeff.com.br','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',current_date,'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqZWZmQGplZmYuY29tLmJyIiwiZXhwIjoxNTg1NTY3Njk3fQ.RniEXfmeiXgAXldWwdgEKljZ06NdyfOkzLKCeg-PGA6wc-8Mf4kkn2b4KzEabDi9gEWoA74Yv17jrHO7pE_Ypw');
