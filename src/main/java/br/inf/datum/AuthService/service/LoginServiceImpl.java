@@ -63,10 +63,10 @@ public class LoginServiceImpl implements LoginService {
      * @param user
      */
     private void validarEmailsenha(LoginDTO user) {
-        if (user.getEmail() == null || user.getEmail().isBlank()) {
+        if (user.getEmail() == null || user.getEmail().isEmpty()) {
             throw new MessageException(USUÁRIO_E_OU_SENHA_INVÁLIDOS);
         }
-        if (user.getPassword() == null || user.getPassword().isBlank()) {
+        if (user.getPassword() == null || user.getPassword().isEmpty()) {
             throw new MessageException(USUÁRIO_E_OU_SENHA_INVÁLIDOS);
         }
     }

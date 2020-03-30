@@ -47,11 +47,11 @@ public class UsuarioServiceImpl implements UsuarioService {
     }
 
     private void validarUserCad(UserCadDTO userCad) {
-        if(userCad.getName()==null || userCad.getName().isBlank()){
+        if(userCad.getName()==null || userCad.getName().isEmpty()){
             this.mensagemCamposObrigatorio("name");
-        }else if(userCad.getEmail()==null || userCad.getEmail().isBlank()){
+        }else if(userCad.getEmail()==null || userCad.getEmail().isEmpty()){
             this.mensagemCamposObrigatorio("email");
-        }else if(userCad.getPassword()==null || userCad.getPassword().isBlank()){
+        }else if(userCad.getPassword()==null || userCad.getPassword().isEmpty()){
             this.mensagemCamposObrigatorio("password");
         }else if(null != validarEmail(userCad)){
             this.mensagemEmailDuplcado("E-mail");
