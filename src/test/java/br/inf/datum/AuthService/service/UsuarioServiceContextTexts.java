@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public abstract class UsuarioServiceContextTexts {
 
     public UserCadDTO getUserCadDTO(){
-        UserCadDTO userCadDTO = new UserCadDTO();   
+        UserCadDTO userCadDTO = new UserCadDTO();
         userCadDTO.setEmail("teste@teste.com.br");
         userCadDTO.setName("teste teste");
         userCadDTO.setPassword("123");
